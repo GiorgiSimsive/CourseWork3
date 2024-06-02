@@ -1,4 +1,4 @@
-from datetime import datetime
+import datetime
 
 
 class Operation:
@@ -16,7 +16,7 @@ class Operation:
         """
         Меняет формат даты
          """
-        iso_date = datetime.fromisofomat(self.date)
+        iso_date = datetime.datetime.fromisoformat(self.date)
         return iso_date.strftime("%d.%m.%Y")
 
 
